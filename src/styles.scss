@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.row{
+	display: flex;
+	flex-flow:row wrap;
+}
+.col-4{
+	flex: 0 1 33.3333%;
+	max-width: 33.3333%;
+}
+
+.text-center{text-align: center;}

@@ -1,0 +1,27 @@
+:host{
+	position: absolute;
+	background-color: #888;
+
+	width: 1000px;
+	height: 1000px;
+	.tile{
+		position: absolute;
+	}
+	.fog{
+		pointer-events: none;
+		position: absolute;
+		background-color:#000;
+		transition:opacity .25s linear;
+		width: 100%;
+		height: 100%;
+		.fog-1{
+			opacity:.5;
+		}
+		.fog-2{
+			opacity:1;
+		}
+	}
+	.tile:hover .fog{
+		border:1px solid #888;
+	}
+}
