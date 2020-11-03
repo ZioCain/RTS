@@ -1,3 +1,4 @@
+// Menu item to show (upgrades, make unit, buildings, ...)
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Item } from 'src/interfaces/item';
 

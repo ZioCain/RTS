@@ -1,3 +1,4 @@
+// module that will hold the whole UI
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

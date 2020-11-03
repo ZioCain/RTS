@@ -1,3 +1,4 @@
+// output to show the resource
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Resource } from "src/interfaces/resource";

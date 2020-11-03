@@ -1,8 +1,10 @@
 <div
 	(click)="LeftClick(tile)"
-	(contextmenu)="RightClick()"
+	(contextmenu)="RightClick(tile,$event)"
 	*ngFor="let tile of tiles"
 	class="tile"
+	[ngClass]="{'selected':tile.selected}"
 	[ngStyle]="{'width':TILE_WIDTH+'px', 'height':TILE_HEIGHT+'px', 'top':tile.y+'px', 'left':tile.x+'px'}">
 	<div class="fog" [ngClass]="{'fog-1': tile.fogLevel==1, 'fog-2': tile.fogLevel==2}"></div>
+	<div *ngIf="tile.occupied!==''" class="occupy" [ngClass]='tile.occupied'><img [src]="tile.image"></div>
 </div>

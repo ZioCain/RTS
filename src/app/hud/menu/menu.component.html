@@ -1,9 +1,9 @@
 <div class="row text-center">
 	<div class="col-4">
-		<rts-item *ngFor="let item of items"></rts-item>
+		<rts-item *ngFor="let item of items" (clicked)="HandleAction($event)" [item]="item" (mouseover)="MouseOverItem(item)"></rts-item>
 	</div>
 	<div class="col-4">
-		<p>{{ info }}</p>
+		<p [innerHTML]="info"></p>
 	</div>
 	<div class="col-4">
 		<p>IDK</p>
